@@ -1,0 +1,1 @@
+class HardwareException(message: String) : RuntimeException(message)

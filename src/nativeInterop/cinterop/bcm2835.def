@@ -1,0 +1,10 @@
+headers=bcm2835.h
+package=bcm2835
+staticLibraries=libbcm2835.a
+libraryPaths=src/nativeInterop/cinterop
+
+---
+
+void bcm2835_spi_writenb_hacked(const int8_t* buf, uint32_t len) {
+    bcm2835_spi_writenb((char*) buf, len);
+}
